@@ -39,7 +39,9 @@
     <Compile Include="Comet.cs" />
     <Compile Include="Comets.cs" />
     <Compile Include="GasPlanet.cs" />
-    <Compile Include="Planet.cs" />
+    <Compile Include="IDetect.cs" />
+    <Compile Include="IDetect1.cs" />
+    <Compile Include="Programm.cs" />
     <Compile Include="SmallBodies.cs" />
     <Compile Include="SolarPlanet.cs" />
     <Compile Include="SolarSytem.cs" />

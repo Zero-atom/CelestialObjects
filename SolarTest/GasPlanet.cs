@@ -18,7 +18,7 @@ namespace SolarTest
 
         public double Atmosphere { get => _atmosphere; set => _atmosphere = value; }
 
-        public new void Event()
+        public override void Event()
         {
             Console.WriteLine("Позднее Связывание!!!!");
             base.Event();

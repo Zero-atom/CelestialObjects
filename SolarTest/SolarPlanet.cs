@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SolarTest
 {
-    public class SolarPlanet
+    public class SolarPlanet : IDetect, IDetect1
     {
         private double _mass;
         private double _density;
@@ -33,12 +33,9 @@ namespace SolarTest
         {
             Console.WriteLine("Событие произошло");
         }
-        public CelestialObjects CelestialObjects
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        /* Решение коллизии с помощью 2 метода, явного обьявления к какому интерф. принадл-ит метод*/
+        void IDetect.Detect() { Console.WriteLine("Заменеч астероид"); }
+        void IDetect1.Detect() { Console.WriteLine("Заменечена комета"); }
+        public CelestialObjects CelestialObjects { get => default; set { } }
     }
 }
